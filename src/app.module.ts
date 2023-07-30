@@ -7,7 +7,7 @@ import { ProductsModule } from './products/products.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(process.env.MONGODB_CONNECTION_STRING, {
+    MongooseModule.forRoot(process.env.MONGODB_CONNECTION_STRING || "mongodb+srv://carlosguzman0515:NDoBZHSm2LERtaj7@cluster0.e9gy3wx.mongodb.net/technologicalVanguardDb", {
 
 
     }),
